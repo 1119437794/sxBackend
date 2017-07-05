@@ -1,0 +1,126 @@
+@import "../../../../assets/css/px2rem";
+
+.warnSearchOutputItem {
+  @at-root {
+
+    #{&}__root {
+      position: relative;
+      width: px2rem(340);
+      height: px2rem(250);
+      margin-bottom: px2rem(20);
+      float: left;
+      border-radius: px2rem(4);
+      box-shadow: 0 0 px2rem(3) #d6dce2;
+      background-color: #fff;
+
+      &:not(:nth-of-type(4n)){  margin-right: px2rem(13);  }
+    }
+
+    #{&}__title {
+      display: table;
+      width: 100%;
+      height: px2rem(40);
+      border-radius: px2rem(4) px2rem(4) 0 0;
+      color: #fff;
+      text-align: center;
+      font-size: fsPx2rem(14);
+      font-weight: normal;
+      background-color: #00315a;
+
+      >span {
+        display: table-cell;
+        padding: 0 px2rem(10);
+        vertical-align: middle;
+      }
+    }
+
+    #{&}__main{
+      position: relative;
+      padding: px2rem(6);
+      overflow: hidden;
+
+      //&::before {
+      //  content: '';
+      //  position: absolute;
+      //  width: 1px;
+      //  top: 15px;
+      //  left: px2rem(248);
+      //  height: calc(100% - 15px);
+      //  border-left: 1px dashed #e7ebef;
+      //}
+    }
+
+      &__notice {
+          margin-bottom: px2rem(2);
+          color: red;
+          text-align: center;
+          font-size: fsPx2rem(12);
+      }
+
+    #{&}__table {
+      // width: px2rem(260) ;
+      float: left;
+      font-size: fsPx2rem(12);
+    }
+
+    #{&}__tr {  height: px2rem(22);  }
+
+    #{&}__tableTitle {
+      // width: px2rem(60);
+      color: #808080;
+    }
+
+    #{&}__tableText {
+      width: px2rem(200);
+      color: #4c4c4c;
+      letter-spacing: -1px;
+    }
+
+    #{&}__textMulti {
+      height: px2rem(40);
+      overflow-y: auto;
+    }
+
+    #{&}__riskVal {
+      width: px2rem(60);
+      padding-top: px2rem(36);
+      float: right;
+        border-left: 1px dashed #e7ebef;
+    }
+
+    #{&}__riskTitle {
+      height: px2rem(26);
+      line-height: px2rem(26);
+      color: #808080;
+      text-align: center;
+      font-size: fsPx2rem(14);
+    }
+
+    #{&}__riskNum {
+      height: px2rem(42);
+      line-height: px2rem(42);
+      color: #f6a900;
+      text-align: center;
+      font-size: fsPx2rem(36);
+    }
+
+    #{&}__detail {
+      position: absolute;
+      width: 100%;
+      bottom: px2rem(17);
+      text-align: center;
+    }
+
+    #{&}__detailBtn {
+      width: px2rem(160);
+      height: px2rem(34);
+      line-height:px2rem(34);
+      border: none;
+      border-radius: px2rem(20);
+      color: #fff;
+      cursor: pointer;
+      font-size: fsPx2rem(16);
+      background-color: #0393dc;
+    }
+  }
+}

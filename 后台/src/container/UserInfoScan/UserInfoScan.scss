@@ -1,0 +1,57 @@
+// Created By yxc
+.userInfoScan {
+    @at-root {
+        &_title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_actWrap {
+            display: flex;
+            align-items: center;
+        }
+
+        %btn {
+            width: 100px;
+            &::before {
+                font-family: iconfont;
+                margin-right: 8px;
+            }
+        }
+
+        &_edit {
+            @extend %btn;
+
+            &::before {
+                content: '\e725';
+            }
+        }
+
+        &_del {
+            @extend %btn;
+            margin: 0 14px;
+            border-color: #e14240;
+            background-color: #e14240;
+
+            &::before {
+                content: '\e636';
+                font-size: 20px;
+            }
+        }
+
+        &_inputs {
+            display: flex;
+            width: percentage(1443 / 1631);
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .inputField_root {
+                width: percentage(630 / 1443);
+            }
+        }
+
+        &_role {
+            width: percentage(1443 / 1631);
+        }
+    }
+}

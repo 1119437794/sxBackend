@@ -1,0 +1,64 @@
+// Created By yxc
+@import "../../../assets/css/px2rem";
+
+.warnRiskHeader {
+  @at-root {
+
+    #{&}__root {
+      .detailsHeader__root {
+        padding: 0 px2rem(9) 0 px2rem(22);
+        background-color: #fff;
+        border-radius: px2rem(4);
+      }
+
+      .searchBox__input {  background-color: #ebebf3;  }
+
+      .searchBox__btn {  color: #808080;  }
+    }
+
+    %export-fullinfo {
+      position: relative;
+      height: px2rem(26);
+      top: px2rem(17);
+      border-radius: px2rem(2);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: fsPx2rem(12);
+    }
+
+    #{&}__export {
+      @extend %export-fullinfo;
+      display: inline-block;
+      width: px2rem(55);
+      line-height: px2rem(26);
+      margin-left: px2rem(20);
+      text-align: center;
+      text-decoration: none;
+      background-color: #f8a900;
+    }
+
+    #{&}__fullinfoBtn {
+      @extend %export-fullinfo;
+      width: px2rem(82);
+      margin-left: px2rem(6);
+      background-color: #0293dc;
+    }
+
+    #{&}__wrap {
+      height: 100%;
+      float: right;
+      font-size: 0;
+    }
+
+    #{&}__space {
+      position: relative;
+      display: inline-block;
+      width: px2rem(2);
+      height: px2rem(14);
+      top: px2rem(10);
+      margin: 0 px2rem(11);
+      background-color: #a1abba;
+    }
+  }
+}

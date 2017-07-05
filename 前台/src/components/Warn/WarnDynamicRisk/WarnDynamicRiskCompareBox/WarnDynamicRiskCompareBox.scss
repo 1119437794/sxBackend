@@ -1,0 +1,206 @@
+// Created By csy
+@import "../../../../assets/css/px2rem";
+@import "../../../../assets/css/font/iconfont.css";
+
+.warnDynamicRisk {
+  @at-root {
+
+    #{&}__compareBox {
+        width: px2rem(390);
+    	/*height: px2rem(630);*/
+        height: 830px;
+    	float: right;
+    	background: #fff
+    }
+
+    #{&}__compareBoxInset {
+    	width:100%;
+    	padding: 10px 15px 10px 15px;
+    }
+
+    #{&}__contentTitle {
+    	width: 100%;
+    	background: #8895a9;
+    	height: 38px;
+    	line-height: 38px;
+
+		p {
+			display: inline-block;
+		}
+    	.contentTitleWrap {
+    		width: 200px;
+    		margin:0 auto;
+    	}
+
+        .contentTitleWrap p {
+            width: 80px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: #fff;
+            color: #666;
+            font-size: 14px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+    }
+
+    #{&}__loading {
+        padding:10px 10px;
+        font-size:14px;
+        color:#000;
+        text-align: center;
+    }
+
+
+    #{&}__item {
+        overflow: hidden;
+        height: 50px;
+        position: relative;
+        transition: all 0.3s ease;
+
+        &:nth-child(1){
+            /*height: 284px;*/
+        }
+
+        /*标题*/
+        .warnDynamicRisk__title {
+            height: 40px;
+            line-height: 40px;
+            background: #e9ecf3;
+            border-radius: 5px;
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+
+        .warnDynamicRisk__yellow {
+            color: #ff9b00;
+            font-weight: normal;
+        }
+        .warnDynamicRisk__blue {
+            color: #00315a;
+        }
+
+        .warnDynamicRisk__itemTitle {
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+            background: #e5f0f9;
+            border-radius: 5px;
+            margin: 5px 0  5px 0;
+            padding-left: 20px;
+            font-size: 16px;
+            cursor:pointer;
+        }
+
+        .itemTitleNum {
+            float: right;
+            width: 180px;
+            cursor: pointer;
+
+                span {
+                    width: 55px;
+                    display: inline-block;
+                    text-align: left;
+                    font-weight: bold;
+                }
+
+                .icon-xiaojiantoushang:before{
+                    position: relative;
+                    top: -2px;
+                }
+        }
+
+        .itemTitleNum .symbol {
+            color: #999;
+            font-size: 12px;
+        }
+
+        .itemContent {
+            width: 100%;
+            height: 226px;
+        }
+
+        /*左边内容*/
+        .itemContentLeft {
+            height: 100%;
+            width: 25%;
+            padding-right: 5px;
+            float: left;
+        }
+
+        .itemContentLeft-inset {
+            background: #e9ecf3;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            padding-top: 12px
+        }
+
+        .textWrap {
+            width: 30px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+            left: 10px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        /*右边内容*/
+        .itemContentRight {
+            height: 100%;
+            width: 75%;
+            float: left;
+            position: relative;
+            border-radius: 5px;
+            padding-left: 3px;
+
+            .title {
+                padding-left: 28px;
+                font-size: fsPx2rem(14)
+            }
+
+            .title span {
+                padding-right: 10px;
+                display: inline-block;
+            }
+            .title span:nth-child(1) {
+                width: px2rem(90)
+            }
+            .title span:nth-child(2) {
+                width: px2rem(45)
+            }
+            .title span:nth-child(3) {
+                width: px2rem(45)
+            }
+
+            .scroll {
+                height: 70px;
+                background: #e9ecf3;
+                overflow-x: hidden;
+                overflow-y: auto;
+                border-radius: 5px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+
+            .scroll li {
+                color: #808080;
+                font-size: 14px;
+                padding: 0px 0px;
+                text-align: center;
+                height: 24px;
+                line-height: 24px;
+                cursor: pointer;
+                overflow:hidden;
+
+                &:hover {
+                    background:#fff;
+                };
+            }
+        }
+
+
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// 针对布局缩放
+@function px2rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+}
+
+// 针对字体缩放
+$fsBasic: 16;
+
+@media screen and (min-width: 1440px) {
+  $fsBasic: 18 !global;
+}
+
+@function fsPx2rem($px) {
+  @return ($px / $fsBasic) * 1rem;
+}
+

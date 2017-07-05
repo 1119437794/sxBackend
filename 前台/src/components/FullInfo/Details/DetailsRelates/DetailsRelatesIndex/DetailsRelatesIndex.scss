@@ -1,0 +1,43 @@
+// Created By yxc
+@import "../../../../../assets/css/px2rem";
+
+.detailsRelatesIndex {
+  @at-root {
+
+    #{&}__root {
+      padding: px2rem(12);
+
+      .warnStaticRiskControlTable__table {  border-top: 1px solid #fff;  }
+
+      .warnStaticRiskControlTable__tdTitle ,
+      .warnStaticRiskControlTable__tdText {
+        border-color: #fff;
+      }
+    }
+
+    #{&}__wrap {  background-color: #edeef3;  }
+
+    #{&}__head {
+      height: px2rem(46);
+      font-size: 0;
+    }
+
+    %name-value {
+      display: inline-block;
+      line-height: px2rem(46);
+      color: #333;
+      font-size: fsPx2rem(16);
+    }
+
+    #{&}__name {
+      @extend %name-value;
+      width: percentage(180 / 422);
+      padding-left: px2rem(22);
+    }
+    #{&}__value {
+      @extend %name-value;
+      width: percentage(242 / 422);
+      text-align: center;
+    }
+  }
+}

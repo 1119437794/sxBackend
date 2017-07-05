@@ -1,0 +1,20 @@
+// Created By yxc
+@import "../../assets/css/px2rem";
+
+.fullInfo {
+  @at-root {
+
+    #{&}__root {
+      padding-top: px2rem(100);
+      background: url("../../assets/imgs/fullinfoIndexBg.png");
+      background-size: cover;
+    }
+
+    #{&}__page {
+      padding: px2rem(20) px2rem(130) px2rem(40) 0;
+      overflow: hidden;
+
+      .page__root {  float: right;  }
+    }
+  }
+}

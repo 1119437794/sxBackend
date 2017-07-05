@@ -1,0 +1,16 @@
+@import "../../../../assets/css/px2rem";
+
+.detailsBasicTitile {
+  @at-root {
+
+    #{&}__root {
+      height: px2rem(40);
+      line-height: px2rem(40);
+      padding-left: px2rem(20);
+      color: #fff;
+      font-size: fsPx2rem(16);
+      font-weight: normal;
+      background-color: #8895a9;
+    }
+  }
+}

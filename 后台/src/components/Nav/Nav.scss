@@ -1,0 +1,83 @@
+// Created By yxc
+
+$navItemIcon:
+        (
+                1: '\e626',
+                2: '\e64f',
+                3: '\e62d'
+        );
+
+.nav {
+    @at-root {
+        &_root {
+            width: 250px;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        &_item {
+            font-size: 16px;
+            color: #718e9c;
+        }
+
+        @each $key, $icon in $navItemIcon {
+            .nav_item:nth-of-type(#{$key}) {
+                .nav_title::after {
+                    content: $icon;
+                    position: absolute;
+                    top: 0;
+                    left: 50px;
+                    font-size: 20px;
+                    font-family: iconfont;
+                }
+            }
+        }
+
+        %active {
+            position: relative;
+            color: #0293dc;
+            background-color: #d9f0fc;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 2px;
+                height: 100%;
+                background-color: #0293dc;
+            }
+        }
+
+        &_title {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            cursor: pointer;
+            line-height: 60px;
+            padding: 0 34px 0 78px;
+            background-repeat:no-repeat;
+            background-position:  38px center;
+            transition: all .3s;
+
+            &:hover, &-active {
+                @extend %active;
+            }
+        }
+
+        &_list {
+
+            &Item {
+                height: 48px;
+                line-height: 48px;
+                padding-left: 78px;
+                cursor: pointer;
+
+                &:hover, &-active {
+                    @extend %active;
+                }
+            }
+        }
+
+    }
+}

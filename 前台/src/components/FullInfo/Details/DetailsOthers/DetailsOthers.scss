@@ -1,0 +1,101 @@
+// Created By yxc
+
+@import "../../../../assets/css/px2rem";
+
+.detailsOthers {
+    @at-root {
+        &__root {
+            padding: 0  px2rem(20) px2rem(20) px2rem(34);
+            overflow: hidden;
+        }
+
+        &__title {
+            &Tab {
+                height: px2rem(36);
+                background-color: #fff;
+            }
+
+            &Item {
+                position: relative;
+                float: left;
+                height: px2rem(36);
+                line-height: px2rem(36);
+                width: percentage(1 / 6);
+                color: #4c4c4c;
+                cursor: pointer;
+                text-align: center;
+                font-weight: bold;
+                font-size: fsPx2rem(14);
+                transition: all .3s;
+
+                &--active, &:hover {
+                    color: #00315a;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 1px;
+                        background-color: #00315a;
+                        bottom: -1px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        &__subTab {
+            padding: px2rem(20);
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        &__wrap {
+            border: 1px solid #dbe1e7;
+            margin-bottom: px2rem(10);
+        }
+
+        &__list {
+            max-height: px2rem(700);
+            padding: px2rem(24);
+            margin-top: px2rem(10);
+            border-radius: px2rem(4);
+            overflow: auto;
+            background-color: #fff;
+            font-size: fsPx2rem(14);
+
+            &Title {
+                height: px2rem(30);
+                line-height: px2rem(30);
+                color: #808080;
+
+                li {
+                    float: left;
+                    padding-left: px2rem(26);
+                }
+            }
+
+            &Wrap {
+                max-height: px2rem(570);
+                overflow: auto;
+                color: #4c4c4c;
+                clear: left;
+
+                span {
+                    padding: px2rem(8) 0 px2rem(8) px2rem(26);
+                }
+            }
+        }
+
+        &__item {
+            display: flex;
+        }
+
+        &__notice {
+            margin-top: px2rem(20);
+            color: #00315a;
+            font-weight: bold;
+            font-size: fsPx2rem(14);
+        }
+    }
+}

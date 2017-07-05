@@ -1,0 +1,30 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.detailsTable {
+  @at-root {
+
+    #{&}__root {
+      width: 100%;
+      color: #808080;
+      font-size: fsPx2rem(14);
+      background-color: #f5f5f9;
+
+      td { padding-left: px2rem(30); }
+
+      .noResNotice__root {
+        height: px2rem(40);
+        line-height: px2rem(40);
+      }
+    }
+
+    #{&}__th {
+      height: px2rem(52);
+      font-weight: normal;
+    }
+
+    #{&}__tr {
+      height: px2rem(52);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "microsoft yahei";
+}
+
+/* 实现全屏 不会出现内容不足时 白屏区域*/
+html {
+  min-height: 100%;
+  background-color: #ebebf3;
+}
+
+table {  border-collapse:collapse;  }
+
+.ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 针对项目关键词匹配样式 */
+.match__key__class {  color: #f5a800;  }

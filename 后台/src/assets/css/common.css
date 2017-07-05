@@ -1,0 +1,140 @@
+/* 用户信息浏览 编辑或新增用户信息 公用类 */
+.service_root {
+    width: calc(100% - 250px);
+    padding: 0 20px;
+}
+
+.service_title {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 20px;
+    color: #2c405a;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.service_wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.service_wrap .inputField_root {
+    margin-bottom: 40px;
+}
+
+.service_btns {
+    display: flex;
+    justify-content: center;
+}
+
+.service_btns button:first-of-type {
+    margin-right: 20px;
+}
+
+.service_itemTitle {
+    display: flex;
+    height: 24px;
+    width: 90px;
+    color: #718e9c;
+    font-size: 14px;
+}
+
+.service_tip {
+    width: 88.47333%;
+    margin-top: 14px;
+    padding-left: 90px;
+    font-size: 14px;
+    color: #2c405a;
+}
+
+.service_tip span {
+    color: #db3e3e;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* 用户列表 与 角色列表 公用类 */
+.service_table {
+    width: 100%;
+    background-color: #fff;
+}
+
+.service_th {
+    height: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #718e9c;
+    border-bottom: 1px solid #ebebf3;
+}
+
+.service_tb {
+    height: 70px;
+    color: #2c405a;
+    font-size: 12px;
+    transition: all .3s;
+}
+.service_tb:hover {
+     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.06);
+ }
+
+.service_tableActIcon {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #B2C0C7;
+    font-weight: bold;
+    font-size: 24px !important;
+    transition: all .3s;
+}
+.service_tableActIcon:hover {
+     color: #0293dc;
+ }
+
+.service_page {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0;
+ }
+
+.service_count {
+    color: #0293dc;
+    font-size: 12px;
+}
+
+.service_back {
+    display: flex;
+    width: 54px;
+    align-items: center;
+    justify-content: space-between;
+}
+.service_back::before {
+    content: '';
+    width: 1px;
+    height: 22px;
+    background-color: #718e9c;
+}
+.service_back::after {
+    content: '\e611';
+    color: #8995a9;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: iconfont;
+ }
+
+.service_arrow {
+    cursor: pointer;
+}
+.service_arrow-unfold {
+    transform: rotate(180deg);
+}
+
+.service_disable {
+    border: none !important;
+    /*cursor: no-drop !important;*/
+    pointer-events: none;
+    background-color: grey !important;
+ }

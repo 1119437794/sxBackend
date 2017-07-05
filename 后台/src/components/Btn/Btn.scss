@@ -1,0 +1,39 @@
+// Created By yxc
+
+$btnWidth: 120px !default;
+
+.btn {
+    @at-root {
+        %btn {
+            width: $btnWidth;
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #0293dc;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        %active {
+            color: #fff;
+            background-color: #0293dc;
+        }
+
+        &_root {
+            &-default {
+                @extend %btn;
+                color: #0293dc;
+                background-color: #fff;
+                transition: all .3s;
+
+                &:hover {
+                    @extend %active;
+                }
+            }
+
+            &-active {
+                @extend %btn;
+                @extend %active;
+            }
+        }
+    }
+}

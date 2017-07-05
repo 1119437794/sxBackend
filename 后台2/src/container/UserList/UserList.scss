@@ -1,0 +1,87 @@
+// Created By yxc
+
+$tdWidth: (
+        1: 101,
+        2: 128,
+        3: 143,
+        4: 151,
+        5: 146,
+        6: 213,
+        7: 193,
+        8: 160,
+        9: 168,
+        10: 250
+);
+
+.userList {
+    @at-root {
+
+        &_add {
+            margin-left: 50px;
+        }
+
+        &_limit {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            padding: 0 percentage(28 / 1631);
+            margin-bottom: 10px;
+            background-color: #fff;
+
+            &Wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: percentage(1500 / 1603);
+            }
+        }
+
+        &_search {
+            width: percentage(140 / 1603);
+        }
+
+        &_username, &_realName, &_depart {
+            display: flex;
+            width: 16%;
+
+            label {
+                width: auto;
+            }
+
+            input {
+                flex-grow: 1;
+                height: 40px;
+                padding: 0 10px;
+                margin: 0 4px;
+            }
+        }
+
+        &_district, &_userType {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #718e9c;
+
+            .selectBox_root {
+                flex-grow: 1;
+                width: 160px;
+                margin: 0 8px 0 4px;
+            }
+        }
+
+        @each $key, $width in $tdWidth {
+            &_td#{$key} {
+                width: percentage($width / 1631);
+                @if $key == 1 {
+                    padding-left: percentage(30 / 1631);
+                }
+
+                @if $key == 10 {
+                    text-align: right;
+                    padding-right: percentage(30 / 1631);
+                }
+            }
+        }
+    }
+}

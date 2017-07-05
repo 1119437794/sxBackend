@@ -1,0 +1,29 @@
+@import "../../../../assets/css/px2rem";
+
+.detailsLitigations {
+  @at-root {
+
+    #{&}__root {
+      padding: 0  px2rem(20) px2rem(20) px2rem(34);
+      overflow: hidden;
+    }
+
+    #{&}__wrap {
+      padding: px2rem(20);
+      background-color: #fff;
+      box-shadow: 0 0 3px #d6dce2;
+
+      .detailsTable__root { margin-top: px2rem(1); }
+    }
+
+    #{&}__page {
+      padding: px2rem(20);
+      overflow: hidden;
+      background-color: #f5f5f9;
+
+      .page__root {
+        float: right;
+      }
+    }
+  }
+}

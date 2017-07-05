@@ -1,0 +1,99 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.warnStaticRiskControl {
+  @at-root {
+
+    #{&}__root {
+        position: relative;
+        padding-bottom: px2rem(12);
+        background-color: #fff;
+
+      .detailsBasicTitile__root {
+        color: #808080;
+        background-color: transparent;
+      }
+    }
+
+    #{&}__item {
+      position: relative;
+      height: px2rem(40);
+      background-color: #f7f7f7;
+      &:not(:last-of-type) {  margin-bottom: 1px;  }
+      cursor: pointer;
+      font-size: fsPx2rem(14);
+      transition: all .3s;
+
+      #{&}--active {
+        @extend %active-hover;
+
+        .warnStaticRiskControl__arrow {
+          transform: rotate(-180deg);
+          -o-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+          -moz-transform: rotate(-180deg);
+          -webkit-transform: rotate(-180deg);
+        }
+      }
+
+      &:hover {  @extend %active-hover;  }
+    }
+
+    %active-hover {
+      background-color: #8895a8;
+
+      .warnStaticRiskControl__title {  color: #fff;  }
+
+      .warnStaticRiskControl__text {  color: #ffdb03;  }
+
+      .warnStaticRiskControl__arrow {  color: #fff;  }
+    }
+
+    #{&}__title {
+      position: relative;
+      display: block;
+      width: px2rem(192);
+      line-height: px2rem(40);
+      padding-left: px2rem(22);
+      float: left;
+      color: #808080;
+
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: px2rem(9);
+        width: px2rem(1);
+        height: px2rem(22);
+        background-color: #dcdbe0;
+      }
+    }
+
+      &__info {
+          float: left;
+          margin-left: px2rem(45);
+          height: px2rem(40);
+          width: px2rem(20);
+          background: url("../../../../assets/imgs/warnRiskControlInfo.png") no-repeat center;
+          background-size: contain;
+      }
+
+    #{&}__text {
+      position: relative;
+      display: block;
+      width: px2rem(202);
+      line-height: px2rem(40);
+      float: left;
+      color: #00315a;
+      text-align: center;
+      font-size: fsPx2rem(24);
+    }
+
+    #{&}__arrow {
+      position: absolute;
+      right: px2rem(26);
+      color: #8895a9;
+      font-size: px2rem(12);
+    }
+  }
+}

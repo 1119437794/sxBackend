@@ -1,0 +1,17 @@
+@import "../../assets/css/px2rem";
+
+.tab {
+  @at-root {
+
+    #{&}__root::after {
+        content: '';
+        clear: both;
+    }
+
+    #{&}__item {
+      position: relative;
+      float: left;
+      cursor: pointer;
+    }
+  }
+}

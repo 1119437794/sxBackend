@@ -1,0 +1,10 @@
+// Created By yxc
+.roleAdd {
+    @at-root {
+        &_name {
+            input {
+                width: percentage(791 / 1443);
+            }
+        }
+    }
+}

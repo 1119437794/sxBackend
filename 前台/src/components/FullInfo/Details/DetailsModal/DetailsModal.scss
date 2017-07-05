@@ -1,0 +1,129 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.detailsModal {
+  @at-root {
+
+    #{&}__root {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 121;
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+    #{&}__wrap {
+      position: absolute;
+      width: px2rem(600);
+      height: px2rem(530);
+      left: 50%;
+      top: 50%;
+      padding: px2rem(50) 0 px2rem(20);
+      border-radius: px2rem(2);
+      transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      box-shadow: 0 0 3px #d6dce2;
+      background-color: #fff;
+    }
+
+    #{&}__title {
+      //height: px2rem(44);
+      padding: 0 px2rem(100);
+      color: #4c4c4c;
+      text-align: center;
+      font-size: fsPx2rem(16);
+    }
+
+    #{&}__subTitle {
+      height: px2rem(30);
+      line-height: px2rem(30);
+      color: #4c4c4c;
+      text-align: center;
+      font-size: fsPx2rem(14);
+      font-weight: normal;
+    }
+
+    #{&}__casecode {
+      height: px2rem(18);
+      line-height: px2rem(18);
+      padding: 0 px2rem(20);
+      color: #666;
+      text-align: right;
+      font-size: fsPx2rem(12);
+      font-weight: normal;
+    }
+
+    #{&}__casecodeDashed {
+      display: block;
+      width: 100%;
+      height: 0;
+      margin-top: px2rem(4);
+      border-bottom: 1px dashed #cfd7e0;
+    }
+
+    #{&}__main {
+      position: relative;
+      width: px2rem(600);
+      height: px2rem(342);
+      margin-top: px2rem(24);
+      overflow-y: auto;
+
+      // 使用百分比 解决 左右布局时 出现滚动条问题
+      #{&}Left {
+        $width: 412 / 600;
+
+        width: percentage($width);
+        padding: 0 px2rem(10) 0 px2rem(32);
+        float: left;
+        color: #666;
+        text-align: justify;
+        font-size: fsPx2rem(14);
+      }
+
+      #{&}Right {
+        $width: 188 / 600;
+
+        width: percentage($width);
+        padding: 0 px2rem(10);
+        float: right;
+      }
+
+      &::after {
+        content: "";
+        position: fixed;
+        width: 0;
+        height: px2rem(342);
+        border-left: 1px dashed #cfd7e0;
+      }
+    }
+
+    #{&}__item {
+      margin-bottom: px2rem(10);
+      font-size: 0; // font-size：0 也是经常使用
+
+      #{&}Title {
+        color: #333;
+        font-weight: bold;
+        font-size: fsPx2rem(12);
+      }
+
+      #{&}Text {
+        color: #666;
+        font-size: fsPx2rem(12);
+      }
+    }
+
+    #{&}__close {
+      position: absolute;
+      right: px2rem(10);
+      top: px2rem(10);
+      color: #acb7c5;
+      cursor: pointer;
+    }
+  }
+}

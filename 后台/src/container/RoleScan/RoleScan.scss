@@ -1,0 +1,53 @@
+// Created By yxc
+.roleScan {
+    @at-root {
+        &_title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_btns {
+            display: flex;
+        }
+
+        %btn {
+            width: 100px;
+            margin-right: 10px;
+            color: #fff;
+            border: none;
+
+            &::before {
+                font-size: 20px;
+                font-family: iconfont;
+            }
+        }
+
+        &_edit {
+            @extend %btn;
+
+            &::before {
+                content: '\e725';
+                vertical-align: middle;
+            }
+        }
+
+
+        &_fp {
+            @extend %btn;
+            background-color: #f8a900;
+
+            &::before {
+                content: '\e64f';
+            }
+        }
+
+        &_del {
+            @extend %btn;
+            background-color: #e14240;
+
+            &::before {
+                content: '\e636';
+            }
+        }
+    }
+}

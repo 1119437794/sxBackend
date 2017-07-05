@@ -1,0 +1,31 @@
+// Created By yxc
+
+@import "../../../../../assets/css/px2rem";
+
+.warnDynamicRisk {
+  @at-root {
+    #{&}__timeTitle {
+      color: #4c4c4c;
+      font-size: fsPx2rem(14);
+    }
+  }
+
+  .selectNew__root {
+    position: relative;
+    height: px2rem(26);
+    padding: 0 0 0 px2rem(6);
+
+    .icon-xialajiantou {
+      color: #000;
+      height: 100%;
+      line-height: px2rem(26);
+    }
+  }
+
+  .selectNew__root__title {
+    height: px2rem(26) !important;
+    line-height: px2rem(26) !important;
+  }
+
+}
+

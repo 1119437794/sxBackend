@@ -1,0 +1,109 @@
+// Created By csy
+@import "../../../../assets/css/px2rem";
+@import "../../../../assets/css/font/iconfont.css";
+
+.warnDynamicRisk {
+  @at-root {
+
+    #{&}__picBox {
+      width: px2rem(1000);
+      /*height: px2rem(630);*/
+      height: 830px;
+      float: left;
+      background: #666;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    #{&}__Pic {
+    	float: left;
+    	width: 50%;
+    	/*height: px2rem(590);*/
+    	height: 800px;
+    	padding: 0px 10px 20px 10px;
+    	position: relative;
+    	overflow: hidden;
+    	background: #fff;
+    }
+
+	#{&}__toolBoxWrap {
+		width: 100%;
+		height: 100px;
+		background: #fff;
+		position: relative;
+		z-index: 99;
+		padding-top:px2rem(30);
+	}
+    #{&}__toolBox {
+    	width: px2rem(340);
+    	margin: 0 auto;
+    	font-size: 18px;
+
+     	.select__root {
+        top:0px;
+        width:5rem;
+        margin-left:10px;
+		}
+    }
+
+	#{&}__scaleBox {
+		width: 6.625rem;
+		height: 1.625rem;
+		display: inline-block;
+		background: #e0e1e9;
+	    font-size: 1rem;
+	    line-height:1.625rem;
+		text-align: center;
+		margin-left: px2rem(1);
+		vertical-align: middle;
+
+		.reduce, .add {
+			height:1.625rem;
+			width: 1.625rem;
+			background: #ebebf3;
+			text-align: center;
+			line-height: 22px;
+			cursor: pointer;
+			font-size: 1.4rem;
+    	    line-height: 1.4rem;
+		}
+		.reduce {
+			float: left;
+			color:#23a0e0;
+			font-weight:bold;
+		}
+		.add {
+			float: right;
+			color:#23a0e0;
+			font-weight:bold;
+		}
+	}
+
+	#{&}__back {
+		width: 1.625rem;
+    	height: 1.625rem;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+
+		&::before {
+			font-size:px2rem(25);
+			cursor: pointer;
+			color:#23a0e0;
+		};
+	}
+
+	#{&}__img {
+    position: relative;
+    display: block;
+    margin: px2rem(45) auto 0;
+    transform-origin: left top;
+    -o-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+  }
+}
+}
+

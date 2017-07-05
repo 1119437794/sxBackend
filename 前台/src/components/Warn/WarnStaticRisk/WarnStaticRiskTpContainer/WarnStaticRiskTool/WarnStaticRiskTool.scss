@@ -1,0 +1,30 @@
+// Created By yxc
+@import "../../../../../assets/css/px2rem";
+
+.warnStaticRiskTool {
+  @at-root {
+
+    #{&}__root {
+      position: absolute;
+      overflow: hidden;
+      right: px2rem(10);
+      top: px2rem(10);
+      z-index: 98;
+    }
+
+    #{&}__item {
+      width: px2rem(24);
+      height: px2rem(24);
+      line-height: px2rem(20);
+      margin-left: px2rem(10);
+      float: left;
+      border: 1px solid #ddd;
+      color: #0293dc;
+      cursor: pointer;
+      text-align: center;
+      font-weight: bold;
+
+      i {  font-size: fsPx2rem(16);  }
+    }
+  }
+}

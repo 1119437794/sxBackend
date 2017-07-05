@@ -1,0 +1,39 @@
+// Created By yxc
+
+@import "../../../../assets/css/px2rem";
+
+.fullInfoSearchOuputItem {
+  @at-root {
+
+    #{&}__root {
+      height: px2rem(118);
+      border-bottom: 1px solid #cac9cd;
+    }
+
+    #{&}__th {  height: px2rem(56);  }
+
+    #{&}__tb {  height: px2rem(24);  }
+
+    #{&}__td2 {
+      width: px2rem(354);
+      color: #0293dc;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: fsPx2rem(16);
+    }
+
+    #{&}__td3 {  width: px2rem(336);  }
+
+    #{&}__td4 {  width: px2rem(492);  }
+
+    #{&}__tdTitle {
+      color: #666;
+      font-size: fsPx2rem(14);
+    }
+
+    #{&}__tdText {
+      color: #333;
+      font-size: fsPx2rem(14);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+// Created By yxc
+.userInfo {
+    @at-root {
+        &_tel, &_email {
+            input {
+                width: percentage(791 / 1443);
+            }
+        }
+    }
+}

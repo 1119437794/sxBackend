@@ -1,0 +1,23 @@
+// Created By yxc
+@import "../../../assets/css/px2rem";
+
+.fullInfoSearchOutput {
+  @at-root {
+
+    #{&}__root {
+      position: relative;
+      min-height: px2rem(472);
+      padding: 0 px2rem(130);
+
+      .noResNotice__root {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: px2rem(40);
+        line-height: px2rem(40);
+        transform: translate(-50%, -50%);
+        font-size: fsPx2rem(16);
+      }
+    }
+  }
+}

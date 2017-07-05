@@ -1,0 +1,54 @@
+@import "../../assets/css/px2rem";
+
+.accountLogout {
+  @at-root {
+
+    #{&}__root {
+        height: px2rem(60);
+        line-height: px2rem(60);
+        // height: 60px;
+        // line-height: 60px;
+      float: right;
+
+      .iconfont {
+        margin-right: px2rem(6);
+        font-size: fsPx2rem(14);
+      }
+    }
+
+    #{&}__user {
+        position: relative;
+      margin-right: px2rem(30);
+      color: #fff;
+      font-size: fsPx2rem(14);
+        cursor: pointer;
+    }
+
+    #{&}__logout {
+      color: #e6a106;
+      cursor: pointer;
+      font-size: fsPx2rem(14);
+    }
+
+      &_drop {
+          position: absolute;
+          width: 88px;
+          top: px2rem(37);
+          left: 0;
+          z-index: 101;
+
+          &Item {
+              height: 30px;
+              line-height: 30px;
+              cursor: pointer;
+              text-align: center;
+              background-color: #00315A;
+              transition: all .3s;
+
+              &:hover {
+                  background-color: #325B7B;
+              }
+          }
+      }
+  }
+}

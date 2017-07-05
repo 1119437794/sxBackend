@@ -1,0 +1,42 @@
+@import "../../../../../assets/css/px2rem";
+
+.detailBasicBusinessInfo {
+  @at-root {
+
+    #{&}__root {
+      padding: px2rem(20);
+      background-color: #fff;
+    }
+
+    #{&}__wrap {
+      padding: px2rem(10) 0;
+      //background-color: #fafafc;
+    }
+
+    #{&}__table {
+      width: 100%;
+      tr:not(:last-of-type){  border-bottom: 1px solid #eef2f5;  }
+    }
+
+    #{&}__space {  width: px2rem(60);  }
+
+    %title-text {
+      height: px2rem(36);
+      padding: px2rem(4) 0;
+      font-size: fsPx2rem(14);
+    }
+
+    #{&}__title {
+      width: px2rem(154);
+      color: #262626;
+      @extend %title-text;
+    }
+
+    #{&}__text {
+      width: px2rem(428);
+      color: #666;
+      @extend %title-text;
+    }
+
+  }
+}

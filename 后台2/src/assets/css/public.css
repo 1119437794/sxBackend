@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "microsoft yahei";
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: #ebebf3;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+td{
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

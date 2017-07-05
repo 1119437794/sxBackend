@@ -1,0 +1,77 @@
+// Created By yxc
+
+@import "../../../assets/css/px2rem";
+
+.warnIndex {
+  @at-root {
+
+    #{&}__wrap {  padding: px2rem(20);  }
+
+    #{&}__scatter {
+      box-shadow: 0 0 3px #d6dce2;
+      background-color: #fff;
+
+      #{&}Echart {
+          position: relative;
+        height: px2rem(520);
+        width: calc(100% - 196px);
+        margin: 0 auto;
+      }
+
+        .noResNotice__root {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    #{&}__map {
+      margin-top: px2rem(20);
+
+      #{&}Title {
+        height: px2rem(56);
+        line-height: px2rem(56);
+        color: #333;
+        text-align: center;
+        font-size: fsPx2rem(20);
+        font-weight: normal;
+      }
+
+      #{&}Wrap {
+        height: px2rem(500);
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: px2rem(2);
+        box-shadow: 0 0 3px #d6dce2;
+      }
+
+      #{&}Echart {
+        width: 50%;
+        height: px2rem(500);
+        float: left;
+      }
+
+    }
+
+    #{&}__table {
+      width: 50%;
+      padding: px2rem(15) 0;
+      float: left;
+    }
+
+      &_export {
+          display: inline-block;
+          float: right;
+          height: px2rem(30);
+          line-height: px2rem(30);
+          padding: 0 px2rem(10);
+          margin: px2rem(10) px2rem(10) 0 0;
+          border-radius: px2rem(4);
+          color: #fff;
+          text-decoration: none;
+          font-size: fsPx2rem(14);
+          background-color: #eba90b;
+      }
+  }
+}

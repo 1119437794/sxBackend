@@ -1,0 +1,74 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.warnIndexTable {
+  @at-root {
+
+    #{&}__root {  }
+
+    %title-item {
+      height: px2rem(40);
+      line-height: px2rem(40);
+      font-size: 0;
+    }
+
+    %span {
+      height: px2rem(40);
+      padding-left: px2rem(10);
+      display: inline-block;
+      font-size: fsPx2rem(14);
+    }
+
+    #{&}__title {
+      @extend %title-item;
+      color: #333;
+      font-weight: normal;
+      border-bottom: 1px solid #616161;
+    }
+
+    #{&}__order {
+      width: px2rem(90);
+      @extend %span;
+    }
+
+    #{&}__name {
+      width: px2rem(400);
+      @extend %span;
+      cursor: pointer;
+    }
+
+    #{&}__index {
+      width: px2rem(190);
+      @extend %span;
+
+      #{&}--up::after {
+        content: url("../../../../assets/imgs/warnIndexTableUp.png");
+        margin-left: px2rem(10);
+      }
+
+      #{&}--down::after {
+        content: url("../../../../assets/imgs/warnIndexTableDown.png");
+        margin-left: px2rem(10);
+      }
+    }
+
+    #{&}__list {
+      height: px2rem(400);
+      padding: 0 px2rem(3);
+      overflow-y: auto;
+    }
+
+    #{&}__item {
+      @extend %title-item;
+      color: #808080;
+      border-bottom: 1px solid #e7e7e7;
+      transition: all .3s;
+
+      &:hover {
+        color: #038bd9;
+        box-shadow: 0 0 3px #038bd9;
+        border-top: 1px solid #e7e7e7;
+      }
+    }
+  }
+}

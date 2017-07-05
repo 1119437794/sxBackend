@@ -1,0 +1,77 @@
+@import "../../assets/css/px2rem";
+
+.page {
+  @at-root {
+
+    #{&}__root {
+      overflow: hidden;
+      color: #666;
+    }
+
+    #{&}__pageList {
+      float: left;
+      overflow: hidden;
+    }
+
+    #{&}__pagesItem {
+      min-width: px2rem(36);
+      height: px2rem(28);
+      line-height: px2rem(28);
+      margin-right: px2rem(10);
+      padding: 0 px2rem(4);
+      float: left;
+      cursor: pointer;
+      text-align: center;
+      font-size: fsPx2rem(12);
+      border: 1px solid #D1D1D1;
+      border-radius: px2rem(2);
+      transition: all .3s;
+
+      #{&}--active, &:hover {
+        color: #fff;
+        border-color: #0393dc;
+        background-color: #0393dc;
+      }
+    }
+
+    #{&}__count {
+      height: px2rem(30);
+      line-height: px2rem(30);
+      margin-right: px2rem(8);
+      float: left;
+      font-size: fsPx2rem(12);
+    }
+
+    // 跳转指定页码
+    #{&}__to {
+      height: px2rem(30);
+      float: left;
+      overflow: hidden;
+      font-size: fsPx2rem(12);
+
+      #{&}Input {
+        height: px2rem(27);
+        width: px2rem(46);
+        margin: 0 px2rem(4);
+        padding: 0 px2rem(4);
+        border: none;
+        color: #666;
+        text-align: center;
+        border-radius: px2rem(2);
+        background-color: #fff;
+      }
+
+      #{&}Btn {
+        height: px2rem(27);
+        width: px2rem(36);
+        color: #666;
+        cursor: pointer;
+        font-size: fsPx2rem(12);
+        border: 1px solid #D1D1D1;
+        border-radius: px2rem(2);
+        background-color: transparent;
+      }
+    }
+  }
+
+}

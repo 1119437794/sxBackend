@@ -1,0 +1,69 @@
+// Created By yxc
+
+@import "../../../../assets/css/px2rem";
+
+.warnIndexSearchBox {
+  @at-root {
+
+    #{&}__root {
+      width: 100%;
+      height: px2rem(464);
+      padding-top: px2rem(34);
+      background: url("../../../../assets/imgs/warnIndexSearchBoxBg.png") center px2rem(-97);
+      background-size: cover;
+
+      .searchBox__root {
+        width: px2rem(712);
+        height: px2rem(58);
+        margin: 0 auto;
+      }
+
+      .searchBox__input {
+        border-radius: px2rem(30);
+        border: px2rem(6) solid rgba(187, 198, 233, .3);
+      }
+
+      .searchBox__btn {
+        right: px2rem(18);
+        color: #8895a9;
+        font-size: fsPx2rem(32);
+      }
+    }
+
+    #{&}__title {
+      height: px2rem(106);
+      line-height: px2rem(106);
+      color: #fff;
+      text-align: center;
+      font-weight: normal;
+      font-size: fsPx2rem(28);
+
+      #{&}Icon {
+        margin-right: px2rem(10);
+        font-size: fsPx2rem(28);
+      }
+    }
+
+    #{&}__tab {
+      height: px2rem(20);
+      margin-bottom: px2rem(18);
+      text-align: center;
+
+      .tab__root {  display: inline-block;  }
+
+      .tab__item {
+        width: px2rem(106);
+        height: px2rem(20);
+        line-height: px2rem(20);
+
+        &:not(:last-of-type){
+          border-right: 1px solid #c7dafb;
+        }
+        color: #fff;
+        font-size: fsPx2rem(14);
+
+        #{&}--active {  font-weight: bold;  }
+      }
+    }
+  }
+}

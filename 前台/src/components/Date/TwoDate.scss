@@ -1,0 +1,51 @@
+// Created By yxc
+@import "../../assets/css/px2rem";
+
+.twoDate {
+    @at-root {
+        &_root {
+            position: relative;
+            display: flex;
+            width: px2rem(215);
+            align-items: center;
+
+            .date_root {
+                width: px2rem(100);
+            }
+
+            .date_current {
+                padding: 0 px2rem(6);
+            }
+        }
+
+        &_space {
+            width: px2rem(10);
+            height: px2rem(1);
+            margin: 0 px2rem(2);
+            background-color: #b5c9e8;
+        }
+
+        %shade {
+            position: absolute;
+            width: px2rem(86);
+            top: px2rem(8);
+            z-index: 100;
+            color: #4c4c4c;
+            font-size: fsPx2rem(14);
+            text-align: center;
+            background-color: #fff;
+        }
+
+        &_shade {
+            &-1 {
+                @extend %shade;
+                left: px2rem(2);
+            }
+
+            &-2 {
+                @extend %shade;
+                left: px2rem(128);
+            }
+        }
+    }
+}

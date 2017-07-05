@@ -1,0 +1,19 @@
+// Created By csy
+@import "../../../assets/css/px2rem";
+@import "../../../assets/css/font/iconfont.css";
+
+.warnDynamicRisk {
+  @at-root {
+
+    #{&}__root {
+      padding: px2rem(10) px2rem(20);
+      background-color: #ebebf3;
+    }
+
+    #{&}__wrap {
+      // overflow: hidden;
+      padding: px2rem(10) 0;
+    }
+  }
+}
+

@@ -1,0 +1,93 @@
+// Created By yxc
+@import "../../assets/css/px2rem";
+
+.selectHasArrow {
+    @at-root {
+
+        &_root {
+            position: relative;
+            width: 100%;
+            display: inline-block;
+            font-size: fsPx2rem(14);
+        }
+
+        &_valBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: px2rem(32);
+            line-height: px2rem(24);
+            padding: 0 px2rem(10);
+            cursor: pointer;
+            border-radius: px2rem(4);
+            border: 1px solid #0293dc;
+            background-color: #fcfdff;
+
+            &-disable {
+                cursor: context-menu;
+            }
+
+            &-err{
+                background-color: #ffec9e;
+            }
+        }
+
+        &_curVal {
+            color: #707680;
+        }
+
+        %toggle {
+            width: px2rem(8);
+
+            &::before {
+                display: inline-block;
+                color: #0293dc;
+                transform-origin: left center;
+            }
+        }
+
+        &_toggle {
+
+            &-down {
+                @extend %toggle;
+                &::before {
+                    transform: scale(.5);
+                }
+            }
+
+            &-up{
+                @extend %toggle;
+                &::before {
+                    transform: scale(.5) rotate(180deg) translateX(-100%);
+                }
+            }
+        }
+
+        &_list {
+            position: absolute;
+            max-height: px2rem(322);
+            width: 100%;
+            z-index: 100;
+            color: #fff;
+            overflow: auto;
+            box-shadow: 0 0 1px gray;
+            background-color: #203b50;
+            transition: all .3s;
+        }
+
+        &_item {
+            position: relative;
+            height: px2rem(40);
+            line-height: px2rem(40);
+            padding: 0 px2rem(10);
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover, &-active {
+                color: #f6a200;
+                background-color: #3b6687;
+            }
+        }
+    }
+}

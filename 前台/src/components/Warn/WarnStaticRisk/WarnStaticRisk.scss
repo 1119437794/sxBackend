@@ -1,0 +1,61 @@
+// Created By yxc
+@import "../../../assets/css/px2rem";
+
+.warnStaticRisk {
+  @at-root {
+
+    #{&}__root {
+      padding: px2rem(10) px2rem(20);
+      background-color: #ebebf3;
+
+      .select__root {
+        position: relative;
+        top: px2rem(17);
+        margin-left: px2rem(6);
+      }
+    }
+
+    #{&}__wrap {
+      overflow: hidden;
+      padding: px2rem(10) 0;
+    }
+
+    #{&}__left {
+      width: px2rem(930);
+      float: left;
+
+        .detailsBasicTitile__root {
+            margin-top: px2rem(10);
+        }
+
+        .detailsOthers__root {
+            padding: 0;
+        }
+
+        .detailsOthers__titleTab, .detailsOthers__list{
+            background-color: #fafafc;
+        }
+
+        .detailsOthers__subTab {
+            padding: px2rem(10);
+        }
+    }
+
+    #{&}__right {
+      width: px2rem(460);
+      float: right;
+    }
+
+    #{&}__zsgc {  margin-top: px2rem(10);  }
+
+    #{&}__radar {
+      height: px2rem(284);
+      background-color: #fff;
+    }
+
+    #{&}__line {
+      height: px2rem(279);
+      background-color: #fff;
+    }
+  }
+}

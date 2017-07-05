@@ -1,0 +1,58 @@
+// Created By yxc
+
+@import "../../../assets/css/px2rem";
+
+.fullInfoSearchBox {
+  @at-root {
+
+    #{&}__root {
+      width: px2rem(712);
+      margin: 0 auto;
+
+      .searchBox__root {
+        width: 100%;
+        height: px2rem(58);
+      }
+
+      .searchBox__input {
+        border-radius: px2rem(40);
+        border: px2rem(6) solid #dedbde;
+      }
+
+      .searchBox__btn {
+        color: #dcdddd;
+        right: px2rem(18);
+        font-size: fsPx2rem(32);
+      }
+    }
+
+    #{&}__title {
+      height: px2rem(38);
+      line-height: px2rem(38);
+      color: #333;
+      text-align: center;
+      font-size: fsPx2rem(28);
+      font-weight: normal;
+      margin-bottom: px2rem(26);
+
+      #{&}Icon {
+        font-size: fsPx2rem(28);
+        margin-right: px2rem(10);
+      }
+    }
+
+    #{&}__subTitle {
+      height: px2rem(32);
+      line-height: px2rem(32);
+      color: #808080;
+      text-align: right;
+      font-weight: normal;
+      font-size: fsPx2rem(14);
+
+      span {
+        color: #f6a800;
+        font-weight: bold;
+      }
+    }
+  }
+}

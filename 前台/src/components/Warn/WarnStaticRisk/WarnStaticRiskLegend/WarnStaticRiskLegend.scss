@@ -1,0 +1,63 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.warnStaticLegend {
+  @at-root {
+
+    #{&}__root {
+      padding: px2rem(4) 0 0 percentage(12 / 666);
+      overflow: hidden;
+      background-color: #e9ecf3;
+
+      $width: percentage(654 / 666) / 5;
+      li {
+        width: $width;
+        height: px2rem(26);
+        line-height: px2rem(26);
+        padding-left: px2rem(22);
+        float: left;
+        color: #808080;
+        font-size: px2rem(12);
+        background-repeat: no-repeat;
+        background-position: left center;
+
+        &:nth-of-type(1) {
+          background-image: url("../../../../assets/imgs/legend1-1.png") ;
+        }
+        &:nth-of-type(6) {
+          background-image: url("../../../../assets/imgs/legend1-2.png") ;
+        }
+
+        &:nth-of-type(2) {
+          background-image: url("../../../../assets/imgs/legend2-1.png") ;
+        }
+        &:nth-of-type(7) {
+          background-image: url("../../../../assets/imgs/legend2-2.png") ;
+        }
+
+        &:nth-of-type(3) {
+          background-image: url("../../../../assets/imgs/legend3-1.png") ;
+        }
+        &:nth-of-type(8) {
+          background-image: url("../../../../assets/imgs/legend3-2.png") ;
+        }
+
+        &:nth-of-type(4) {
+          background-image: url("../../../../assets/imgs/legend4-1.png") ;
+        }
+        &:nth-of-type(9) {
+          background-image: url("../../../../assets/imgs/legend4-2.png") ;
+        }
+
+        &:nth-of-type(5) {
+          padding-left: px2rem(44);
+          background-image: url("../../../../assets/imgs/legend5-1.png") ;
+        }
+        &:nth-of-type(10) {
+          padding-left: px2rem(44);
+          background-image: url("../../../../assets/imgs/legend5-2.png") ;
+        }
+      }
+    }
+  }
+}

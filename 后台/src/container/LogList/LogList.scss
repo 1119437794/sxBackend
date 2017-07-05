@@ -1,0 +1,126 @@
+// Created By yxc
+
+$tdWidth: (
+        1: 100,
+        2: 179,
+        3: 222,
+        4: 162,
+        5: 149,
+        6: 160,
+        7: 221,
+        8: 200,
+        9: 300
+);
+
+
+.log {
+    @at-root {
+        &_title {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px percentage(28 / 1631);
+            margin-top: 20px;
+            background-color: #fff;
+
+            &L {
+                display: flex;
+                flex-wrap: wrap;
+                // flex-shrink: 0;
+                width:  percentage(1350 / 1631);
+            }
+
+            &R {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        %w25 {
+            display: flex;
+            justify-content: space-between;
+            // flex-shrink: 0;
+            width: 23%;
+            margin-right: 2%;
+        }
+
+        %font {
+            color: #718e9c;
+            font-size: 14px;
+        }
+
+        &_username, &_ip {
+            @extend %w25;
+
+            .inputField_name {
+                width: auto;
+            }
+
+            .inputField_input {
+                height: 40px;
+                width: calc(100% - 80px);
+            }
+        }
+
+        &_addr, &_type, &_page, &_date {
+            @extend %w25;
+            @extend %font;
+            align-items: center;
+
+            .selectBox_root {
+                // flex-shrink: 0;
+                width: calc(100% - 80px);
+            }
+        }
+
+        &_page {
+            width: 48%;
+        }
+
+        &_date {
+            @extend %w25;
+            @extend %font;
+            align-items: center;
+
+            .date_root {
+                width: calc(100% - 80px);
+                // flex-shrink: 0;
+                border-color: #e7eef0;
+            }
+        }
+
+        &_export {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            color: #fff;
+            border: none;
+            background-color: #f8a900;
+        }
+
+        &_table {
+            margin-top: 10px;
+        }
+
+        &_order {
+            display: inline-block;
+            width: 10px;
+            height: 12px;
+            cursor: pointer;
+            background: url("../../assets/imgs/list_order.png");
+        }
+
+        @each $key, $width in $tdWidth {
+            &_td#{$key} {
+                width: percentage($width / 1631);
+                @if $key == 1 or $key == 8 {
+                    padding-left: percentage(30 / 1631);
+                }
+
+                @if $key == 9 {
+                    padding-right: percentage(30 / 1631);
+                }
+            }
+        }
+    }
+}

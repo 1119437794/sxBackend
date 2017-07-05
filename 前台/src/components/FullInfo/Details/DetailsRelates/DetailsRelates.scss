@@ -1,0 +1,32 @@
+@import "../../../../assets/css/px2rem";
+
+.detailsRelates {
+  @at-root {
+
+    #{&}__root {
+      padding: 0  px2rem(20) px2rem(20) px2rem(34);
+      overflow: hidden;
+    }
+
+    #{&}__left {
+      float: left;
+      width: px2rem(930);
+    }
+
+    %border-radius {
+      border-radius: px2rem(4) px2rem(4) 0 0;
+    }
+
+    #{&}__right {
+      float: right;
+      width: px2rem(446);
+      height: px2rem(730);
+      background-color: #fff;
+      @extend %border-radius;
+
+      .detailsBasicTitile__root {
+        @extend %border-radius;
+      }
+    }
+  }
+}

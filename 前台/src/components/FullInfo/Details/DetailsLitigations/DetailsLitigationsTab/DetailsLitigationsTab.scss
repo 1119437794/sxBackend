@@ -1,0 +1,44 @@
+@import "../../../../../assets/css/px2rem";
+
+.detailsLitigationsTab {
+  @at-root {
+
+    #{&}__root {  overflow: hidden;  }
+
+    #{&}__item {
+      // width: calc((100% - 5px) / 5); // calc
+      height: px2rem(60);
+      line-height: px2rem(60);
+      &:not(:last-of-type){  margin-right: 1px;  }
+      float: left;
+      color: #4c4c4c;
+      cursor: pointer;
+      text-align: center;
+      font-size: fsPx2rem(14);
+      border-radius: px2rem(2);
+      background-color: #fafafc;
+      transition: all .3s;
+
+      #{&}--active {  background-color: #f5f5f9;  }
+
+      &:hover {  @extend .detailsLitigationsTab__item--active;  }
+    }
+
+    #{&}__msg {
+      position: relative;
+      display: inline-block;
+      min-width: px2rem(20);
+      height: px2rem(15);
+      line-height: px2rem(15);
+      border-radius: px2rem(1);
+      left: px2rem(10);
+      color: #fff;
+      text-align: center;
+      font-size: fsPx2rem(12);
+
+      #{&}--has {  background-color: #0393dc;  }
+
+      #{&}--hasnot {  background-color: #b2b6bd;  }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../../assets/css/px2rem";
+
+.warnSearchOutput {
+  @at-root {
+
+    #{&}__root {
+      width: 100%;
+      padding: px2rem(20);
+      overflow: hidden;
+
+      .searchBoxHasResList__root {
+        width: px2rem(460);
+        height: px2rem(30);
+      }
+
+      .searchBox__input {
+        line-height: px2rem(30);
+        border-radius: px2rem(20);
+      }
+
+      .page__root {
+        margin-top: px2rem(6);
+        float: right;
+      }
+    }
+
+    #{&}__list {
+      margin-top: px2rem(18);
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../assets/css/px2rem";
+
+.searchBoxHasResList {
+  @at-root {
+
+    #{&}__root {
+      position: relative;
+
+      .noResNotice__root {
+        height: px2rem(28);
+        line-height: px2rem(28);
+      }
+    }
+
+    #{&}__list {
+      $left: 16/460;
+      $width: 430/460;
+
+      position: absolute;
+      width: percentage($width);
+      top: px2rem(31);
+      left: percentage($left);
+      z-index: 99;
+      box-shadow: 0 0 3px #d6dce2;
+      background-color: #fff;
+    }
+
+    #{&}__item {
+      height: px2rem(28);
+      line-height: px2rem(28);
+      padding: 0 px2rem(14);
+      color: #808080;
+      cursor: pointer;
+      font-size: fsPx2rem(14);
+      transition: all .3s;
+
+      #{&}--active {  background-color: #cde9f8;  }
+
+      &:hover {  @extend .searchBoxHasResList__item--active;  }
+    }
+  }
+}

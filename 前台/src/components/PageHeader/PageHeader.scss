@@ -1,0 +1,25 @@
+@import "../../assets/css/px2rem";
+
+.pageHeader {
+  @at-root {
+
+    #{&}__root {
+      height: px2rem(60);
+      line-height: px2rem(60);
+      // height: 60px;
+      // line-height: 60px;
+      padding: 0 px2rem(20);
+      // overflow: hidden;
+      background-color: #00315a;
+    }
+
+    #{&}__title {
+      position: relative;
+      height: 100%;
+      width: px2rem(600);
+      float: left;
+      cursor: pointer;
+      background: url("../../assets/imgs/pageTitleLogo.png") no-repeat 10px center;
+    }
+  }
+}

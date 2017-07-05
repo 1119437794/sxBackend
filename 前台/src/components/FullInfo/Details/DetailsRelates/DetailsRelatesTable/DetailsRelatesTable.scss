@@ -1,0 +1,131 @@
+// Created By yxc
+@import "../../../../../assets/css/px2rem";
+
+.detailsRelatesTable {
+  @at-root {
+
+    #{&}__root {
+      clear: both;
+      padding-top: px2rem(10);
+
+      .tab__root {
+        height: px2rem(40);
+        font-size: 0;
+        font-weight: normal;
+        background-color: #8895a9;
+      }
+
+      .tab__item {
+        display: inline-block;
+        width: px2rem(152);
+        height: px2rem(40);
+        line-height: px2rem(40);
+        font-size: fsPx2rem(16);
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        background-color: #8895a9;
+        transition: all .3s;
+      }
+
+      .tab__item--active {
+        color: #333;
+        background-color: #fff;
+      }
+
+      .noResNotice__root {
+        height: px2rem(40);
+        line-height: px2rem(40);
+        background: #fff;
+      }
+    }
+
+
+    #{&}__table {
+      padding: px2rem(10) px2rem(16) 0;
+      background-color: #fff;
+    }
+
+    #{&}__wrap {
+      padding-top: px2rem(14);
+      border-radius: px2rem(4);
+      //background-color: #edeef3;
+    }
+
+    #{&}__th {
+      height: px2rem(30);
+      line-height: px2rem(30);
+      color: #333;
+      font-size: 0;
+      font-weight: normal;
+    }
+
+    %span {
+      display: inline-block;
+      padding-left: px2rem(10);
+      font-size: px2rem(14);
+    }
+
+    #{&}__name {
+      @extend %span;
+      width: px2rem(212);
+    }
+
+    #{&}__date {
+      @extend %span;
+      width: px2rem(150);
+    }
+
+    #{&}__money {
+      @extend %span;
+      width: px2rem(228);
+    }
+
+    #{&}__addr {
+      @extend %span;
+      width: px2rem(442);
+    }
+
+    #{&}__represent {
+      @extend %span;
+      width: px2rem(100);
+    }
+
+    #{&}__industry {
+      @extend %span;
+      width: px2rem(200);
+    }
+
+    #{&}__list {
+      max-height: px2rem(200);
+      overflow-y: auto;
+    }
+
+    #{&}__item {
+      display: table;
+      height: px2rem(50);
+      color: #666;
+      font-size: 0;
+
+      &:not(:last-of-type){  border-bottom: 1px solid #eef2f5;  }
+
+      span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    #{&}__count {
+      height: px2rem(46);
+      line-height: px2rem(46);
+      text-align: right;
+      color: #666;
+      font-size: fsPx2rem(12);
+
+      span {
+        color: #fb9f00;
+        font-size: fsPx2rem(18);
+      }
+    }
+  }
+}

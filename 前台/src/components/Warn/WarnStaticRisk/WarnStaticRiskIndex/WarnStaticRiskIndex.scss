@@ -1,0 +1,79 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.warnStaticRiskIndex {
+  @at-root {
+
+    #{&}__root {
+      height: px2rem(76);
+      color: #fff;
+      border-radius: px2rem(4);
+      background: url("../../../../assets/imgs/warnStaticRiskIndexBg.png");
+      background-size: cover;
+    }
+
+    %inline {
+      display: inline-block;
+      height: 100%;
+      line-height: px2rem(76); // 同为行级元素 互相之间会有干扰
+      vertical-align: bottom;
+    }
+
+    #{&}__icon {
+      @extend %inline;
+      margin-left: px2rem(36);
+      font-size: fsPx2rem(18);
+    }
+
+    #{&}__title {
+      @extend %inline;
+      margin-left: px2rem(20);
+      font-size: fsPx2rem(18);
+      font-weight: bold;
+    }
+
+    #{&}__space {
+      position: relative;
+      display: inline-block;
+      width: px2rem(1);
+      height: px2rem(10);
+      top: px2rem(-33);
+      margin-left: px2rem(24);
+      background-color: #f7f7fa;
+      vertical-align: bottom;
+    }
+
+    #{&}__num {
+      @extend %inline;
+      margin-left: px2rem(36);
+      font-size: fsPx2rem(36);
+    }
+
+    #{&}__dir {
+      position: relative;
+      display: inline-block;
+      width: px2rem(10);
+      height: px2rem(12);
+      top: px2rem(-32);
+      margin-left: px2rem(10);
+      vertical-align: bottom;
+
+      #{&}--up {
+        background: url("../../../../assets/imgs/warnIndexTableUp.png") no-repeat;
+      }
+
+      #{&}--down {
+        background: url("../../../../assets/imgs/warnIndexTableDown.png") no-repeat;
+      }
+    }
+
+      &_status {
+          @extend %inline;
+          color: #ffdb03;
+          font-weight: bold;
+          font-size: fsPx2rem(18);
+          margin-left: px2rem(20);
+      }
+
+  }
+}

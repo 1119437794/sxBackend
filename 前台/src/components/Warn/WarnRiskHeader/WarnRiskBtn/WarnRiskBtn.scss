@@ -1,0 +1,37 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.warnRiskBtn {
+  @at-root {
+
+    #{&}__root {
+      position: relative;
+      width: px2rem(214);
+      height: px2rem(44);
+      top: px2rem(8);
+      border-radius: px2rem(2);
+      border: none;
+      color: #808080;
+      cursor: pointer;
+      text-align: left;
+      font-size: fsPx2rem(16);
+      background-color: #f3f4f6;
+
+      #{&}--active {
+        color: #0293dc;
+        background-color: #e5f4fb;
+
+        span {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+
+      #{&}Icon {
+        padding-left: px2rem(30);
+        margin-right: px2rem(36);
+        font-size: fsPx2rem(18);
+      }
+    }
+  }
+}

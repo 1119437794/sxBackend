@@ -1,0 +1,14 @@
+@import "../../../../assets/css/px2rem";
+
+.detailBasic {
+  @at-root {
+
+    #{&}__root {
+      padding: 0  px2rem(20) px2rem(20) px2rem(34);
+
+      .detailsBasicTitile__root:not(:first-of-type){
+        margin-top: px2rem(10);
+      }
+    }
+  }
+}

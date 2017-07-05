@@ -1,0 +1,17 @@
+@import "../../assets/css/px2rem";
+
+.select {
+
+  @at-root #{&}__root {
+    width: px2rem(90);
+    height: px2rem(26);
+    padding-left: px2rem(6);
+    color: #333;
+    cursor: pointer;
+    font-size: fsPx2rem(14);
+    border-radius: px2rem(2);
+    border: 1px solid #d0d8df;
+    background-color: #ebebf3;
+  }
+}
+

@@ -1,0 +1,114 @@
+{
+  "data": {
+    "list": [
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "高中",
+        "jobTitle": "保险内勤",
+        "location": "延边延吉延吉市东北亚附近",
+        "pubdate": "2016-03-01",
+        "salary": "1000-2000元",
+        "serviceYear": "不限",
+        "source": "赶集"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "大专",
+        "jobTitle": "出纳员 （职位编号：002）",
+        "location": "长春-绿园区",
+        "pubdate": "2015-11-27",
+        "salary": "2000-2999",
+        "serviceYear": "应届毕业生",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "本科",
+        "jobTitle": "会计",
+        "location": "长春-绿园区",
+        "pubdate": "2015-11-27",
+        "salary": "2000-2999",
+        "serviceYear": "无要求",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "大专",
+        "jobTitle": "出纳员（职位编号：002）",
+        "location": "长春-绿园区",
+        "pubdate": "2015-09-29",
+        "salary": "2000-2999",
+        "serviceYear": "",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "大专",
+        "jobTitle": "出纳员（职位编号：002）",
+        "location": "长春-绿园区",
+        "pubdate": "2015-09-29",
+        "salary": "2000-2999",
+        "serviceYear": "",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "大专",
+        "jobTitle": "核算会计",
+        "location": "长春",
+        "pubdate": "2015-09-29",
+        "salary": "2000-2999",
+        "serviceYear": "",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "本科",
+        "jobTitle": "会计",
+        "location": "长春-绿园区",
+        "pubdate": "2015-09-29",
+        "salary": "2000-2999",
+        "serviceYear": "",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "",
+        "jobTitle": "车险文员（职位编号：404）",
+        "location": "长春-绿园区",
+        "pubdate": "2015-09-27",
+        "salary": "1500-1999",
+        "serviceYear": "",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "",
+        "jobTitle": "IT",
+        "location": "吉林省",
+        "pubdate": "2015-09-05",
+        "salary": "3000-4499",
+        "serviceYear": "",
+        "source": "51job"
+      },
+      {
+        "companyName": "吉林宏大保险销售服务有限公司",
+        "educationRequired": "",
+        "jobTitle": "IT",
+        "location": "吉林省",
+        "pubdate": "2015-09-05",
+        "salary": "3000-4499",
+        "serviceYear": "",
+        "source": "51job"
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 10,
+    "pages": 2,
+    "size": 10,
+    "total": 13
+  },
+  "message": "操作成功",
+  "status": 200,
+  "timestamp": "2016-10-31T08:05:24.635+0000"
+}

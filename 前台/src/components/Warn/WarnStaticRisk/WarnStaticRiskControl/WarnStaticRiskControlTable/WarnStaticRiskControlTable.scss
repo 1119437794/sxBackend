@@ -1,0 +1,38 @@
+// Created By yxc
+@import "../../../../../assets/css/px2rem";
+
+.warnStaticRiskControlTable {
+  @at-root {
+
+    #{&}__root { padding: px2rem(8); }
+
+    #{&}__tdTitle {
+      width: px2rem(192);
+      padding: px2rem(12) px2rem(36) px2rem(12) px2rem(15);
+      color: #4c4c4c;
+      font-size: fsPx2rem(14);
+      border-bottom: 1px solid #e7ebef;
+      border-right: 1px solid #e7ebef;
+    }
+
+    #{&}__tdText {
+      width: px2rem(268);
+      //padding: px2rem(12) 0 px2rem(12) px2rem(107);
+      padding: px2rem(12) 0;
+      color: #4c4c4c;
+      text-align: center;
+      font-size: fsPx2rem(14);
+      border-bottom: 1px solid #e7ebef;
+
+      /* 针对多行文本 */
+      #{&}--multi {  padding-left: px2rem(17);  }
+    }
+
+    #{&}__tr:last-of-type td{  border-bottom: none;  }
+
+    #{&}__multiWrap {
+      max-height: px2rem(100);
+      overflow-y: auto;
+    }
+  }
+}

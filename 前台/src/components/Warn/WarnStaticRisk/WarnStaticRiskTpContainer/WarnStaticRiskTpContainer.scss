@@ -1,0 +1,72 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.warnStaticRiskTpContainer {
+  @at-root {
+
+    #{&}__root {
+      border-radius: px2rem(4) px2rem(4) 0 0;
+
+      #{&}--active {
+        position: fixed;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 999;
+      }
+
+      .detailsBasicTitile__root {  border-radius: px2rem(4) px2rem(4) 0 0;  }
+
+      .searchBoxHasResList__root {
+        position: relative;
+        width: px2rem(260);
+        height: px2rem(28);
+        line-height: px2rem(28);
+        top: px2rem(6);
+        float: right;
+      }
+
+      .searchBox__input {  border-radius: px2rem(20);  }
+    }
+
+    #{&}__fullscreen {
+      position: relative;
+      display: block;
+      top: px2rem(1);
+      margin: 0 px2rem(10) 0 px2rem(14);
+      float: right;
+      cursor: pointer;
+      font-size: fsPx2rem(18);
+    }
+
+    #{&}__tp {
+      padding: px2rem(10);
+      background-color: #fff;
+
+      #{&}Wrap {
+        position: relative;
+        height: px2rem(614);
+      }
+    }
+
+    #{&}__tlwd {
+      overflow: hidden;
+
+      .warnStaticLegend__root {
+        float: left;
+        width: percentage(666 / 910);
+      }
+
+      .warnStaticDimensions__root {
+        float: right;
+        width: percentage(242 / 910);
+      }
+    }
+  }
+}
+
+#dyMap,
+#dyMapMain {  height: 100%;  }
+

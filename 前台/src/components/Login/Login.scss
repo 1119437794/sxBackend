@@ -1,0 +1,115 @@
+// Created By yxc
+@import "../../assets/css/px2rem";
+
+.login {
+  @at-root {
+
+    #{&}__root {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("../../assets/imgs/loginBg.png");
+      background-size: cover;
+    }
+
+    #{&}__wrap {
+      position: absolute;
+      height: px2rem(378);
+      padding-left: px2rem(813);
+      top: 50%;
+       transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+      background: url("../../assets/imgs/mainLogo.png") no-repeat px2rem(394) center;
+    }
+
+    #{&}__box {
+      position: relative;
+      width: px2rem(340);
+      height: px2rem(250);
+      border: 1px solid #0393dc;
+      padding-top: px2rem(45);
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: px2rem(70);
+        left: px2rem(-20);
+        top: 4px;
+        background-color: #21A0E1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: px2rem(70);
+        right: px2rem(-20);
+        bottom: 0;
+        background-color: #21A0E1;
+      }
+    }
+
+    #{&}__username, #{&}__pwd {
+      height: px2rem(52);
+      line-height: px2rem(52);
+      text-align: center;
+
+      input {
+        width: px2rem(245);
+        height: px2rem(32);
+        padding: 0 px2rem(8);
+        border: 1px solid #aaa;
+        background-color: #fff;
+        transition: all .3s;
+
+        &:focus {
+          border: 1px solid #0393dc;
+          box-shadow: 0 0 3px #0393dc;
+        }
+      }
+    }
+
+    #{&}__err {
+      height: px2rem(36);
+      line-height: px2rem(36);
+      padding-left: px2rem(46);
+      color: #be0000;
+      text-align: left;
+      font-size: fsPx2rem(14);
+    }
+
+    #{&}__btn {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: px2rem(50);
+      color: #fff;
+      font-size: fsPx2rem(16);
+      background-color: #30a5e1;
+      border: none;
+      cursor: pointer;
+    }
+
+    #{&}__line1 {
+      position: absolute;
+      left: 0;
+      bottom: px2rem(-18);
+      width: px2rem(680);
+      height: px2rem(50);
+    }
+
+    #{&}__line2 {
+      position: absolute;
+      left: px2rem(-324);
+      top: 0;
+      width: px2rem(304);
+      height: px2rem(8);
+    }
+  }
+}

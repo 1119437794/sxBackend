@@ -1,0 +1,113 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.warnStaticRiskDetails {
+  @at-root {
+
+    #{&}__root {
+      position: absolute;
+      width: px2rem(300);
+      // min-height: px2rem(200);
+      top: px2rem(10);
+      z-index: 99;
+      border-radius: px2rem(4);
+      box-shadow: 0 0 3px #d6dce2;
+      background-color: #f7f7f7;
+
+      .noResNotice__root {
+        height: px2rem(174);
+        line-height: px2rem(174);
+      }
+    }
+
+    #{&}__title {
+      position: relative;
+      height: px2rem(26);
+      line-height: px2rem(26);
+      padding: 0 px2rem(10);
+      color: #fff;
+      border-radius: px2rem(4) px2rem(4) 0 0;
+      font-weight: normal;
+      font-size: fsPx2rem(14);
+      background-color: #8895a9;
+    }
+
+    #{&}__cx {
+      position: absolute;
+      width: px2rem(33);
+      height: px2rem(16);
+      line-height: px2rem(16);
+      top: px2rem(5);
+      right: px2rem(34);
+      color: #4c4c4c;
+      text-align: center;
+      font-size: fsPx2rem(11);
+      background-color: #fff;
+    }
+
+    #{&}__close {
+      position: absolute;
+      display: inline-block;
+      width: px2rem(14);
+      height: px2rem(14);
+      line-height: px2rem(12);
+      top: px2rem(6);
+      right: px2rem(10);
+      color: #fff;
+      font-size: 0;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #fff;
+
+      &::before {
+        display: inline-block;
+        transform: scale(0.6);
+        -o-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        font-size: fsPx2rem(10);
+      }
+    }
+
+    #{&}__wrap {
+      padding: px2rem(6) px2rem(10) px2rem(10);
+      background-color: #f7f7f7;
+    }
+
+    #{&}__table { width: 100%; }
+
+    #{&}__tr {
+      height: px2rem(24);
+      font-size: fsPx2rem(12);
+
+      #{&}Title {
+        width: percentage(76 / 220);
+        color: #777;
+      }
+      #{&}Text {
+        width: percentage(144 / 220);
+        color: #333;
+      }
+    }
+
+    #{&}__btnWrap {
+      margin-top: px2rem(6);
+      padding-top: px2rem(8);
+      border-top: 1px dashed #ddd;
+    }
+
+    #{&}__btn {
+      width: 100%;
+      height: px2rem(24);
+      line-height: px2rem(24);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: px2rem(4);
+      font-size: fsPx2rem(14);
+      background-color: #0293dc;
+    }
+  }
+}

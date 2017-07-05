@@ -1,0 +1,58 @@
+// Created By yxc
+.userInfoEdit {
+    @at-root {
+
+        &_inputs {
+            display: flex;
+            flex-wrap: wrap;
+            width: percentage(1443 / 1631);
+            justify-content: space-between;
+        }
+
+        &_username, &_realName, &_depart, &_district, &_tel, &_email {
+            width: percentage(630 / 1443);
+
+            input {
+                flex-shrink: 0;
+                width: percentage(380 / 630);
+            }
+        }
+
+        &_district {
+            display: flex;
+            align-items: center;
+            height: 60px;
+
+            .selectBox_root {
+                width: percentage(140 / 630);
+            }
+        }
+
+        &_required {
+            color: #db3e3e;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &_setPwd {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: percentage(1443 / 1631);
+            margin-top: 40px;
+
+            .inputField_root {
+                width: percentage(1274 / 1443);
+                margin-bottom: 0;
+            }
+
+            input {
+                width: percentage(320 / 630);
+            }
+        }
+
+        &_role {
+            width: percentage(1443 / 1631);
+        }
+    }
+}

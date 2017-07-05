@@ -1,0 +1,25 @@
+// Created By yxc
+@import "../../../../assets/css/px2rem";
+
+.detailsRecruit {
+  @at-root {
+
+    #{&}__root {
+      padding: 0  px2rem(20) px2rem(20) px2rem(34);
+    }
+
+    #{&}__wrap {
+      padding: px2rem(20);
+      background-color: #fff;
+      box-shadow: 0 0 3px #d6dce2;
+    }
+
+    #{&}__page {
+      padding: px2rem(20);
+      overflow: hidden;
+      background-color: #f5f5f9;
+
+      .page__root { float: right; }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+// Created By yxc
+
+@import "../../assets/css/px2rem";
+
+.inputField {
+    @at-root {
+        %f14 {
+            font-size: 14px;
+        }
+
+        %color1 {
+            color: #718e9c;
+        }
+        %color2 {
+            color: #db3e3e;
+        }
+
+        &_root {
+            display: flex;
+            align-items: center;
+            width: percentage(1443 / 1631);
+        }
+
+        &_name {
+            display: flex;
+            flex-shrink: 0;
+            width: 90px;
+            @extend %color1;
+            @extend %f14;
+        }
+
+        &_required {
+            @extend %color2;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &_input {
+            width: calc(100% - 90px);
+            height: 60px;
+            padding: 0 20px;
+            border-radius: 4px;
+            border: solid 1px #e4e4ec;
+            background-color: transparent;
+            box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.06);
+            @extend %color1;
+            @extend %f14;
+        }
+
+        &_msg {
+            margin-left: 10px;
+            @extend %color2;
+            @extend %f14;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import "../../../../assets/css/px2rem";
+
+.detailNav {
+  @at-root {
+
+    #{&}__root {
+      position: relative;
+      width: 25px;
+    }
+
+    %item {
+        position: absolute;
+        height: 130px;
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+
+        polygon {
+            fill: #00315a;
+            stroke: #666;
+            stroke-width: 1;
+            transition: all .3s;
+        }
+
+        .detailNav__itemText {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            line-height: 16px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            transform: translate(0, -50%);
+        }
+    }
+
+    #{&}__item {
+        @extend %item;
+
+        &:hover  {
+            @extend .detailNav__item--active;
+        }
+
+        &--active {
+            @extend %item;
+            z-index: 99 !important;
+
+            polygon {
+                fill: #0393dc;
+                stroke: #fff;
+                stroke-width: 1;
+            }
+      }
+
+        &--disable {
+            @extend %item;
+            cursor: context-menu;
+
+            polygon {
+                fill: #939495;
+            }
+
+        }
+    }
+  }
+}

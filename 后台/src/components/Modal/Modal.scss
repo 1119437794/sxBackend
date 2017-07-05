@@ -1,0 +1,176 @@
+// Created By yxc
+.modal {
+    @at-root {
+        &_root {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 100;
+            background-color: rgba(0, 0, 0, .6);
+        }
+
+        &_body {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 420px;
+            height: 240px;
+            border-radius: 4px;
+            background-color: #fff;
+            font-size: 16px;
+            color: #163156;
+        }
+
+        &_icon {
+            &-ok, &-err {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        %p76 { padding: 0 76px; }
+
+        &_msg {
+            &-ok, &-err {
+                @extend %p76;
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            &-confirm {
+                @extend %p76;
+                text-align: center;
+            }
+        }
+
+        %btn {
+            &:first-of-type {
+                margin-right: 20px;
+            }
+        }
+
+        &_confirmBtn {
+            margin-top: 30px;
+
+            button {
+                @extend %btn;
+            }
+        }
+
+        %act {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &::before {
+                font-family: iconfont;
+            }
+        }
+
+        &_role {
+            &Wrap {
+                display: flex;
+                width: 100%;
+            }
+
+            &Left, &Right {
+                width: 50%;
+            }
+
+            &Title {
+                height: 44px;
+                line-height: 44px;
+                font-size: 16px;
+                color: #718e9c;
+            }
+
+            &SubTitle {
+                height: 56px;
+                line-height: 56px;
+                font-size: 16px;
+                color: #163156;
+                text-align: center;
+            }
+
+            &List {
+                height: 264px;
+                overflow: auto;
+                padding: 0 14px;
+
+                &-border {
+                    border-right: 1px solid #999;
+                }
+            }
+
+            &Item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 44px;
+                padding: 0 26px 0 40px;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: #f7f7f7;
+                }
+            }
+
+            &Name {
+                font-size: 16px;
+                color: #2c405a;
+            }
+
+            &-add {
+                @extend %act;
+                color: #0293dc;
+
+                &::before {
+                    content: '\e639';
+                }
+            }
+
+            &-sub {
+                @extend %act;
+                color: #dc023a;
+
+                &::before {
+                    content: '\e675';
+                }
+            }
+
+            &Btn {
+                margin: 40px 0 20px 0;
+
+                button {
+                    @extend %btn;
+                }
+            }
+        }
+
+        &_close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            transition: all .3s;
+
+            &::before {
+                content: '\e60a';
+                float: left;
+                color: #0a95dd;
+                font-family: 'iconfont';
+            }
+
+            &:hover {
+                transform: rotate(1turn);
+            }
+        }
+    }
+}

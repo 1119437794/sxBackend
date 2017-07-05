@@ -1,0 +1,60 @@
+// Created By yxc
+
+@import "../../../../assets/css/px2rem";
+
+.detailsOpinion {
+
+  @at-root {
+
+    #{&}__root {
+      padding: 0  px2rem(20) px2rem(20) px2rem(34);
+
+      .noResNotice__root {
+        height: px2rem(40);
+        line-height: px2rem(40);
+      }
+    }
+
+    #{&}__list {
+      max-height: px2rem(700);
+      padding: px2rem(6) px2rem(134);
+      overflow-y: auto;
+      background-color: #fff;
+      box-shadow: 0 0 3px #d6dce2;
+    }
+
+    #{&}__item {
+      max-height: px2rem(140);
+      padding: px2rem(16) px2rem(38);
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #eef2f5;
+      }
+    }
+
+    #{&}__title {
+      height: px2rem(22);
+      line-height: px2rem(22);
+      color: #0393dc;
+      cursor: pointer;
+      font-weight: normal;
+      text-decoration: none;
+      font-size: fsPx2rem(14);
+    }
+
+    #{&}__content {
+      margin-top: px2rem(4);
+      line-height: px2rem(20);
+      color: #262626;
+      font-size: fsPx2rem(14);
+      text-indent: px2rem(30);
+    }
+
+    #{&}__src {
+      margin-top: px2rem(10);
+      color: #666;
+      text-align: right;
+      font-size: fsPx2rem(14);
+      font-weight: normal;
+    }
+  }
+}

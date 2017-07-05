@@ -1,0 +1,10 @@
+// Created By yxc
+.updatePwd {
+    @at-root {
+        &_old, &_new, &_again {
+            input {
+                width: percentage(791 / 1443)
+            }
+        }
+    }
+}

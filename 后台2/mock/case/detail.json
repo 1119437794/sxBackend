@@ -1,0 +1,48 @@
+{
+  "content": {
+    "acceptDate": "20170201",
+    "area": "1",
+    "briefCase": "发生的发生大幅",
+    "caseName": "2",
+    "caseNum": "1",
+    "caseStatus": "发的啥",
+    "collectWay": "1",
+    "company": "发生的的啥",
+    "docs": [
+      {
+        "caseId": "1",
+        "content": "起诉书",
+        "docType": 1,
+        "gmtCreate": 1487125207000,
+        "gmtModified": 1487213058000,
+        "id": 1,
+        "oldName": "裁判文书.doc",
+        "path": "D:/aa.doc"
+      }
+    ],
+    "findSource": "1",
+    "foundCharge": "6",
+    "foundDate": "20170201",
+    "gmtCreate": 1487130126000,
+    "gmtModified": 1487210648000,
+    "groups": "是",
+    "id": 1,
+    "joinPeople": 9,
+    "occurDate": "20170201",
+    "oneJudgeDate": "20170201",
+    "people": "5",
+    "principalIdcard": "32131",
+    "prosecuteDate": "20170201",
+    "repaying": "1",
+    "restitution": 2,
+    "sentencePeople": 1,
+    "settleDate": "20170201",
+    "solveDate": "20170201",
+    "sufferPeople": 1,
+    "sureCharge": "发生的",
+    "twoJudgeDate": "20170201"
+  },
+  "msg": "成功",
+  "pageInfo": 1,
+  "success": true
+}

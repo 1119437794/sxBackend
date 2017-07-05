@@ -1,0 +1,74 @@
+@import "../../../../assets/css/px2rem";
+
+.detailsHeader {
+  @at-root {
+
+    #{&}__root {
+      position:relative;
+      display: table;
+      width: 100%;
+      height: px2rem(60);
+      padding-left: px2rem(34);
+      z-index:99;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .searchBoxHasResList__root {
+        position: relative;
+        height: px2rem(30);
+        width: px2rem(300);
+        top: px2rem(15);
+        float: left;
+      }
+
+      .searchBox__input {  border-radius: px2rem(20);  }
+    }
+
+    #{&}__title {
+      height: px2rem(60);
+      padding-right: px2rem(10);
+      color: #333;
+      font-weight: normal;
+      font-size: fsPx2rem(18);
+
+      #{&}--risk {
+        display: table-cell;
+        width: px2rem(247);
+        vertical-align: middle;
+      }
+      #{&}--details {
+        float: left;
+        line-height: px2rem(60);
+      }
+    }
+
+      &__analysis {
+          position: relative;
+          float: left;
+          height: px2rem(60);
+          line-height: px2rem(60);
+          padding: 0 px2rem(10) 0 px2rem(22);
+          color: #e14340;
+          font-weight: bold;
+          font-size: fsPx2rem(18);
+          &::before {
+              position: absolute;
+              left: 0;
+              content: '';
+              width: px2rem(19);
+              height: 100%;
+              background: url("../../../../assets/imgs/analysisIcon.png") no-repeat left center;
+              background-size: contain;
+          }
+
+          a {
+              text-decoration: none;
+              color: #e14340;
+          }
+      }
+  }
+}
